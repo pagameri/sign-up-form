@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #3a3a3a;
+}
+
+main {
+  display: flex;
+  width: min(60ch, 100vw - 2rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.left-container {
+  /* background-image: url(tree.jpg); */
+  background: url(tree.jpg) center;
+  background-size: cover;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.odin {
+  height: 2rem;
+  width: auto;
+}
+
+.logo-name {
+  /* display: inline; */
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  /* font-size: clamp(1.75rem, 4vw + 1 rem, 3rem); */
+}
+
+.logo-container {
+  margin-top: 25vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(8, 8, 8, 0.5);
+}
+
+.credit {
+  font-size: 0.3rem;
+  color: white;
+  align-self: center;
+  padding-bottom: 5px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #a0b191;
+}
+
+.bottom div a {
+  color: #3a3a3a;
+  text-decoration: none;
+}
+
+.bottom div a:hover {
+  color: #596d48;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  width: 65%;
+  font-size: 0.6rem;
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+
+.top {
+  padding-left: 20px;
+  padding-right: 50px; /*use min here to be responsive*/
+  padding-bottom: 30px;
+}
+
+.third-line {
+  padding-top: 15px;
+}
+
+.middle {
+  background: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  box-shadow: 0px 2px 2px lightgray;
+}
+
+form {
+  display: flex;
+  justify-content: flex-start;  
+  flex-wrap: wrap;
+}
+
+form > span {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 20px 5px 20px;
+  /* justify-content: flex-start; */
+}
+
+p {
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+label {
+  font-size: 0.3rem;
+  color: #3a3a3a;
+}
+
+input {
+  width: 150px;
+  box-sizing: border-box;
+  border: solid 1px #e5e7eb;
+  border-radius: 3px;
+  padding: 3px;
+  font-size: 0.4rem;
+}
+
+input:focus {
+  border: 1px solid #5275DE;
+  outline: none;
+}
+
+.error {
+  border: 1px solid #d55c5f;
+}
+
+span > div {
+  color: #d55c5f;
+  font-size: 0.3rem;
+}
+
+.bottom {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+button {
+  font-size: 0.4rem;
+  font-weight: bold;
+  padding: 5px 25px;
+  cursor: pointer;
+  background-color: #596d48;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2px 2px 1px lightgray;
+}
+
+button:hover {
+  background-color: #69864f;
+  box-shadow: 3px 3px 2px lightgray;
+  transform: 0.7s;
+}
+
+button:active {
+  background-color: #30471c;
+  transform: translateY(2px);
+}
+
+.bottom div {
+  padding-top: 15px;
+  font-size: 0.4rem;
+}
