@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <div class="left-container">
+      <div class="logo-container">
+        <img class="odin" src="odin-lined.png" alt="odin logo">
+        <div class="logo-name">ÆVI</div>
+      </div>
+      <div class="credit">Photo by <a href="https://unsplash.com/@tama66?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Peter Herrmann</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+    </div>
+    <div class="right-container">
+      <div class="top">
+        <div>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams.</div>
+        <div>Sign up <em>now</em> to get started.</div>
+        <div class="third-line">You <em>know</em> you want to.</div>
+      </div>
+      <div class="middle">
+        <p>Let's do this!</p>
+        <form action="post" method="example.com" id="create_account">
+          <span>
+            <label for="first_name">FIRST NAME</label>
+            <input type="text" name="first_name" id="first_name">
+          </span>
+          <span>
+            <label for="last_name">LAST NAME</label>
+            <input type="text" name="last_name" id="last_name">
+          </span>
+          <span>
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email">
+          </span>
+          <span>
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" name="phone" id="phone">
+          </span>
+          <span>
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password" class="error">
+            <div class="error-message">* Passwords do not match</div>
+          </span>
+          <span>
+            <label for="password_conf">CONFIRM PASSWORD</label>
+            <input type="password" name="password_conf" id="password_conf" class="error">
+          </span>
+        </form>
+      </div>
+      <div class="bottom">
+        <button type="submit" form="create_account">Create Account</button>
+        <div>Already have an account? <a href="">Log in</a></div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
