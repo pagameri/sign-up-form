@@ -1,34 +1,17 @@
-const passwords = document.querySelectorAll('.error');
+const passwords = document.querySelectorAll('.password-check');
 
-const first = document.querySelector('#password');
-const second = document.querySelector('#password_conf');
+const firstPw = document.querySelector('#password');
+const secondPw = document.querySelector('#password_conf');
 const errorMessage = document.querySelector('.error-message');
 
-passwords.forEach((password) => {
-  password.addEventListener('keyup', checkPassword => {
-    if (first.value === second.value) {
-      first.classList.remove("error");
-      second.classList.remove("error");
-      errorMessage.style.visibility = 'hidden';
-    }
-    else {
-      first.classList.add("error");
-      second.classList.add("error");
-      errorMessage.style.visibility = 'visible';
-    }
-  })
+secondPw.addEventListener('keyup', checkPassword => {
+  if (firstPw.value === secondPw.value) {
+    firstPw.classList.remove("error");
+    secondPw.classList.remove("error");
+    errorMessage.style.visibility = 'hidden';
+  } else {
+    firstPw.classList.add("error");
+    secondPw.classList.add("error");
+    errorMessage.style.visibility = 'visible';
+  }
 })
-
-
-// buttons.forEach((button) => {
-//   button.addEventListener('click', function (e) { 
-//     playerSelection = e.target.id;
-//     midMsg.textContent = "";
-//     tracker.style.visibility = "visible";
-//     round.textContent = `Round: ${rounds + 1}`;
-//     game();
-//     });
-// });
-
-
-
